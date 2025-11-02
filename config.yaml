@@ -1,0 +1,14 @@
+# Ollama configuration
+ollama_url: "http://localhost:11434/api/generate"
+ollama_chat_url: "http://localhost:11434/api/chat"  # For function calling
+model: "qwen2.5:7b-instruct" # Change to your preferred model
+timeout: 60 # Request timeout in seconds
+
+# API server configuration
+api_host: "0.0.0.0"
+api_port: 8000
+
+# Web tools configuration
+web_fetch_max_bytes: 200000 # Maximum bytes to fetch per URL
+reddit_search_limit: 5 # Number of Reddit posts to return
+
